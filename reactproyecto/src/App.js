@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Primer Cambio de Prueba
         </a>
       </header>
     </div>
