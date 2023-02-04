@@ -1,5 +1,6 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import {Header} from "./componentes/Header"
+import 'boxicons'
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Primer Cambio de Prueba
+          Learn React
         </a>
       </header>
     </div>
