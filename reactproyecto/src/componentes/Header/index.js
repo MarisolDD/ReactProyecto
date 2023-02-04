@@ -1,6 +1,8 @@
 import React from "react";
 import LOGO from "../../images/Logo.jpg"
 
+
+
 export const Header = () => {
     return (
         <header>
