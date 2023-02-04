@@ -1,6 +1,7 @@
 import React from "react"
 import {Header} from "./componentes/Header"
 import 'boxicons'
+import logo from "../src/images/Logo.jpg"
 
 function App() {
   return (
