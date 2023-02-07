@@ -1,0 +1,15 @@
+.card:hover{
+    box-shadow: 5px 10px 20px 1px grey !important;
+    transition: all 0.3s linear;
+    }
+    
+    .card-body {
+        padding: 2rem 0 !important;
+    }
+    .btn-secondary{
+    
+    color: #72448d;
+    }
+    .Cards{
+        margin-top: auto;
+    }
