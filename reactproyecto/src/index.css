@@ -180,3 +180,10 @@ header .cart span{
     display: none;
   }
 }
+
+
+/*----------------------------------CAROUSEL--------------------------------*/
+.miCarousel{
+  width: 150px;
+  height: auto;
+}
