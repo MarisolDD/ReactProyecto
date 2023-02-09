@@ -2,6 +2,7 @@ import React from "react"
 import {Header} from "./componentes/Header"
 import 'boxicons'
 import logo from "../src/images/Logo.jpg"
+import { Footer } from "./componentes/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           Aprender
         </a>
       </Header>
+      <Footer/>
     </div>
   );
 }
