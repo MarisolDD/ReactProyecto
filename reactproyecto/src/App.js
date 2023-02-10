@@ -2,7 +2,7 @@ import React from "react"
 import {Header} from "./componentes/Header"
 import 'boxicons'
 import logo from "../src/images/Logo.jpg"
-import './App.css'
+// import './App.css'
 
 
 import Carousel from "./componentes/carousel"
