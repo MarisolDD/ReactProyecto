@@ -3,12 +3,10 @@ import {Header} from "./componentes/Header"
 import 'boxicons'
 import logo from "../src/images/Logo.jpg"
 import './App.css'
-
-
+import { Footer } from "./componentes/Footer";
+import Cards from './componentes/Cards'
+import './App.css'
 import Carousel from "./componentes/carousel"
-
-
-
 
 function App() {
   return (
@@ -22,9 +20,11 @@ function App() {
           <Carousel />
         </div>
       </div>
+      <Cards></Cards>
+
+      <Footer/>
 
     </div>
-
 
   );
 }
