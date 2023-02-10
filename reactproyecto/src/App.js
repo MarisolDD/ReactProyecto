@@ -1,8 +1,14 @@
 import React from "react"
-import { Header } from "./componentes/Header/index.js"
+import {Header} from "./componentes/Header"
 import 'boxicons'
 import logo from "../src/images/Logo.jpg"
+import './App.css'
+
+
 import Carousel from "./componentes/carousel"
+
+
+
 
 function App() {
   return (
