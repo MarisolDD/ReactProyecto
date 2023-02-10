@@ -5,30 +5,27 @@ import logo from "../src/images/Logo.jpg"
 import './App.css'
 import { Footer } from "./componentes/Footer";
 import Cards from './componentes/Cards'
+import './App.css'
+import Carousel from "./componentes/carousel"
 
 function App() {
   return (
     <div className="App">
-      <Header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Aprender
-        </a>
-      </Header>
+      <div className="row bg-primary">
+        <Header className="header"></Header>
+      </div>
 
+      <div className="row">
+        <div className="container-fluid">
+          <Carousel />
+        </div>
+      </div>
       <Cards></Cards>
 
       <Footer/>
 
     </div>
+
   );
 }
 
