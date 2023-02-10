@@ -6,10 +6,10 @@ import Carousel from "./componentes/carousel"
 
 function App() {
   return (
-    <div className="container-fluid bg-warning App">
+    <div className="App">
 
       <div className="row bg-primary">
-        <div className="col">
+       
           <Header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
             <p>
@@ -23,10 +23,10 @@ function App() {
             >
             </a>
           </Header>
-        </div>
+
       </div>
 
-      <div className="row bg-dark">
+      <div className="row">
         <div className="col">
           <Carousel/>
         </div>
