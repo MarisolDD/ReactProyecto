@@ -1,7 +1,8 @@
 import React from "react";
-import LOGO from "../../images/Logo.jpg"
-
-
+import LOGO from "../../images/Logo.jpg"import React from "react";
+import LOGO from "../../images/Logo.jpg";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from "react-router-dom";
 
 export const Header = () => {
     return (
@@ -25,7 +26,7 @@ export const Header = () => {
                     <a href="#">SEGUROS</a>
                 </li>
                 <li>
-                    <a href="#">NOSOTROS</a>
+                    <Link to={'../Contacto.js'}>Contacto</Link>
                 </li>
             </ul>
             <div className="cart">
@@ -35,3 +36,4 @@ export const Header = () => {
         </header>
     )
 }
+
