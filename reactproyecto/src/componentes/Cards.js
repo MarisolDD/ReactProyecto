@@ -9,39 +9,39 @@ import image4 from '../images/calafate.jpeg'
 const cards = [
     {
         id: 1,
-        title: '$40.000',
+        title: 'Iguazu',
         image: image1,
         url: 'https://misiones.tur.ar/iguazu/',
-        text: 'Iguazu'
+        text: '$40.000'
     },
     {
         id: 2,
-        title: '$45.000',
+        title: 'Bariloche',
         image: image2,
         url: 'https://barilocheturismo.gob.ar/es/home',
-        text: 'Bariloche'
+        text: '$45.000'
 
     },
     {
         id: 3,
-        title: '$48.000',
+        title: 'Jujuy',
         image: image3,
         url: 'http://www.turismo.jujuy.gob.ar/',
-        text: 'Jujuy'
+        text: '$48.000'
     },
     {
         id: 4,
-        title: '$50.000',
+        title: 'Calafate',
         image: image4,
         url: 'https://www.elcalafate.tur.ar/',
-        text: 'Calafate'
+        text: '$50.000'
     }
 
 ]
 
 function Cards() {
   return (
-    <div className="container d-flex justify-content-center align-items-center ">
+    <div className="container d-flex justify-content-center align-items-center h-100">
     <div className="row mt-4">
     {
         cards.map(card => (
