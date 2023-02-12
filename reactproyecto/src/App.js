@@ -9,6 +9,8 @@ import './App.css'
 import Carousel from "./componentes/carousel"
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Contacto from "./componentes/Contacto.js"
+import { Body } from "./componentes/Body"
+
 
 function App() {
   return (
@@ -22,13 +24,14 @@ function App() {
            </Routes>
         </Header>
       </div>
-
       <div className="row">
         <div className="container-fluid">
           <Carousel />
         </div>
       </div>
+
       <Cards></Cards>
+      <Body></Body>
 
       <Footer/>
 

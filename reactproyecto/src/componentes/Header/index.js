@@ -1,6 +1,7 @@
 import React from "react";
 import LOGO from "../../images/Logo.jpg";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Contacto from "../Contacto";
 import { Link } from "react-router-dom";
 
 export const Header = () => {
@@ -33,6 +34,7 @@ export const Header = () => {
                 <span className="item_total">0</span>
             </div>
         </header>
+
     )
 }
 
