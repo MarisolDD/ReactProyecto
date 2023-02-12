@@ -1,33 +1,31 @@
 import React from "react";
 import LOGO from "../../images/Logo.jpg";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Contacto from "../Contacto";
 import { Link } from "react-router-dom";
-import 'boxicons';
 
 export const Header = () => {
     return (
         <header>
-            <a href="http://localhost:3000/">
+            <a href="#">
                 <div className="logo">
                     <img src={LOGO} alt="logo" width="150"/>
                 </div>
             </a>
             <ul>
                 <li>
-                    <a href="http://localhost:3000/">DESTINOS</a>
+                    <a href="#">DESTINOS</a>
                 </li>
                 <li>
-                    <a href="http://localhost:3000/">GRUPALES</a>
+                    <a href="#">GRUPALES</a>
                 </li>
                 <li>
-                    <a href="http://localhost:3000/">AUTOS</a>
+                    <a href="#">AUTOS</a>
                 </li>
                 <li>
-                    <a href="http://localhost:3000/">SEGUROS</a>
+                    <a href="#">SEGUROS</a>
                 </li>
                 <li>
-                    <Link to="../Contacto">Contacto</Link>
+                    <Link to={'../Contacto.js'}>Contacto</Link>
                 </li>
             </ul>
             <div className="cart">
@@ -35,7 +33,6 @@ export const Header = () => {
                 <span className="item_total">0</span>
             </div>
         </header>
-
     )
 }
 
