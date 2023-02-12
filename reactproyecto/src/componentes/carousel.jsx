@@ -37,7 +37,7 @@ const Carousel =()=>{
 
         {arreglo.map((elemento) => (
 
-            <motion.div className="item border border-warning border-1 mx-2">
+            <motion.div className="item border border-warning border-1 mx-2" key={elemento.id}>
 
                 <img className="img-fluid w-100 h-100" src={`../assets/${elemento.src}`} alt={elemento.title}/>
 
