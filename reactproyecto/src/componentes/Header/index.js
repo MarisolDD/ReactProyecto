@@ -1,5 +1,4 @@
 import React from "react";
-import LOGO from "../../images/Logo.jpg"import React from "react";
 import LOGO from "../../images/Logo.jpg";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from "react-router-dom";
