@@ -365,3 +365,17 @@ header .cart span{
     display: none;
   }
 }
+
+/*----------------------------------BODY----------------------------------*/
+.Body{
+background-color: white;
+text-align: center;
+font-family: monospace;
+font-size:small;
+}
+.Body .row{
+  text-align:left;
+}
+.Body .titulo1{
+  font-size: 150%
+}
