@@ -17,12 +17,12 @@ function App() {
       <Routes>
         <Route
           path="/" element={[
-            <Header />,
-            <HeroImage />,
-            <Cards />,
-            <Carousel />,
-            <Body />,
-            <Footer />,
+            <Header key={1}/>,
+            <HeroImage key={2}/>,
+            <Cards key={3}/>,
+            <Carousel key={4}/>,
+            <Body key={5}/>,
+            <Footer key={6}/>,
           ]}
         />
 
