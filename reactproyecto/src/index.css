@@ -146,3 +146,6 @@ font-size:small;
 .Body .titulo1{
   font-size: 150%
 }
+body {
+  overflow-x: hidden;
+}
