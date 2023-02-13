@@ -218,10 +218,11 @@ header{
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  /* position: fixed; */
+  position: fixed;
   box-sizing: border-box;
   background-color: white;
   box-shadow: 0 5px 10px #b8cac1c5;
+  z-index: 1;
 }
 
 a{
