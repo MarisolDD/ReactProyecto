@@ -24,7 +24,7 @@ code {
 }
 
 /*----------------------------------HEADER----------------------------------*/
-header{
+header {
   width: 100%;
   min-height: 100px;
   max-width: 1530px;
@@ -38,6 +38,9 @@ header{
   background-color: white;
   box-shadow: 0 5px 10px #b8cac1c5;
   z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
 }
 
 header a{
