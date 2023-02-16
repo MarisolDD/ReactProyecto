@@ -1,5 +1,4 @@
 import React from "react";
-import { Header } from "./componentes/Header";
 import "boxicons";
 import "./App.css";
 import { Footer } from "./componentes/Footer";
@@ -10,7 +9,9 @@ import { Body } from "./componentes/Body";
 import HeroImage from "./componentes/HeroImage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Contacto from "./pages/Contacto.jsx";
+import { Seguros } from "./pages/Seguros";
 import CarouselInstagram from "./componentes/CarouselInstagram";
+import { Navbar } from "./componentes/Navbar";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
       <Routes>
         <Route
           path="/" element={[
-            <Header key={1}/>,
+            <Navbar key={1}/>,
             <HeroImage key={2}/>,
             <Cards key={3}/>,
             <Carousel key={4}/>,
@@ -29,6 +30,7 @@ function App() {
         />
 
         <Route path="/Contacto" element={<Contacto />} />
+        <Route path="/Seguros" element={<Seguros />} />
       </Routes>
     </BrowserRouter>
   );
