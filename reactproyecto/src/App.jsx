@@ -34,30 +34,5 @@ function App() {
 
 export default App;
 
-/**   {/* <div className="App h-100"> */
 
-/* <div className="row">
-        <Header className="header" />
-      </div> */
 
-/* <div className="row">
-        <HeroImage/>
-      </div> */
-
-/* <div className="row mt-5">
-        <Cards />
-      </div> */
-
-/* <div className="row my-5">
-        <Carousel />
-      </div> */
-
-/* <div className="row h-50 m-5">
-        <Body />
-      </div> */
-
-/* <div className="row">
-        <Footer />
-      </div> */
-
-/* </div> */

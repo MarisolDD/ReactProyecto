@@ -27,7 +27,6 @@ export const Header = () => {
             <a href="http://localhost:3000/">SEGUROS</a>
           </li>
           <li>
-            {/* <a href="http://localhost:3000/">CONTACTO</a> */}
             <Link to="contacto">Contacto</Link>
           </li>
         </ul>
