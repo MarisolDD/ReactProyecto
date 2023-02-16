@@ -4,12 +4,13 @@ import "boxicons";
 import "./App.css";
 import { Footer } from "./componentes/Footer";
 import Cards from "./componentes/Cards";
-import "./App.css";
+// import "./App.css";
 import Carousel from "./componentes/carousel";
 import { Body } from "./componentes/Body";
 import HeroImage from "./componentes/HeroImage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Contacto from "./pages/Contacto.jsx";
+import CarouselInstagram from "./componentes/CarouselInstagram";
 
 function App() {
   return (
@@ -21,8 +22,9 @@ function App() {
             <HeroImage key={2}/>,
             <Cards key={3}/>,
             <Carousel key={4}/>,
-            <Body key={5}/>,
-            <Footer key={6}/>,
+            <CarouselInstagram key={5}/>,
+            <Body key={6}/>,
+            <Footer key={7}/>,
           ]}
         />
 
