@@ -9,16 +9,16 @@
     background: #FFFF,
     
 }
-body {
-  margin: 1%;
+.div-form {
+  /* margin: 1%; */
   padding: 1%;
   background: linear-gradient(-45deg,  #ffff , #f5f2eeec, #FFFF,#f1e6c7);  
-  height: 100%;
-  weight: 100% ;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 5%;
+  /* margin-bottom: 5%; */
  
 }
 
@@ -96,3 +96,6 @@ button:focus {
   color: #ffff;
 }
 
+.btn-retorno{
+  color: black;
+}

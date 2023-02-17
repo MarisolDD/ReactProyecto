@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Outlet, Link } from "react-router-dom";
 
-export const Navbar = () => {
+const Navbar = () => {
   return (
     <div className="container-fluid w-100">
       <header>
@@ -40,3 +40,5 @@ export const Navbar = () => {
     </div>
   );
 };
+
+export default Navbar;
