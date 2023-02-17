@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Body = () => {
+const Body = () => {
   return (
     <div className="Body container-fluid">
       <h1 className="titulo1"> ¿Por qué Nosotros?</h1>
@@ -42,3 +42,5 @@ export const Body = () => {
     </div>
   );
 };
+
+export default Body;

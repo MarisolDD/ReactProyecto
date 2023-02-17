@@ -26,13 +26,13 @@ const Contacto = ({CONTACTO}) => {
             <input type="email" name='user_email' />
             <hr />
             <label>Message</label>
-            <textarea name="user_message" id="" cols="30" rows="10"></textarea>
+            <textarea name="user_message" id="" cols="30" rows="8"></textarea>
             <hr />
             <button> Send ✉ </button>
             <p></p>
-            <button>
+            <button className="btn-retorno">
                 <Link to="/" >
-                 ← Return
+                 <span  className="btn-retorno">← Return</span>
                  </Link>
             </button>
           </form>

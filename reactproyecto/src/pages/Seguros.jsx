@@ -1,15 +1,13 @@
-import React from 'react'
-import { Navbar } from '../componentes/Navbar';
-import { Link } from "react-router-dom";
-import { Footer } from '../componentes/Footer';
-import Cards from '../componentes/Cards';
+import React from "react";
 
-export const Seguros = () => {
+const Seguros = () => {
   return (
-    <>
-      <Navbar/>
-      <Cards/>
-      <Footer/>
-    </>
-  )
-}
+    <div>
+     
+      <h1 className="h1">HOLA DESDE SEGUROS</h1>
+
+    </div>
+  );
+};
+
+export default Seguros;
