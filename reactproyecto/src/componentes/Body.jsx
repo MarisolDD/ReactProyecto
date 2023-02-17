@@ -3,7 +3,7 @@ import React from "react";
 export const Body = () => {
   return (
     <div className="Body container-fluid">
-      <h1 className="titulo1"> ¿Porque Nosostros?</h1>
+      <h1 className="titulo1"> ¿Por qué Nosotros?</h1>
       <div className="container-fluid text-center">
         <div className="row">
           <div className="col">

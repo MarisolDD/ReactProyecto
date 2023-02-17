@@ -1,10 +1,10 @@
 import React from "react";
-import LOGO from "../../images/Logo.jpg";
+import LOGO from "../images/Logo.jpg";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Outlet, Link } from "react-router-dom";
 
-export const Header = () => {
+export const Navbar = () => {
   return (
     <div className="container-fluid w-100">
       <header>
@@ -24,7 +24,7 @@ export const Header = () => {
             <a href="http://localhost:3000/">AUTOS</a>
           </li>
           <li>
-            <a href="http://localhost:3000/">SEGUROS</a>
+            <Link to="seguros">SEGUROS</Link>
           </li>
           <li>
             <Link to="contacto">Contacto</Link>

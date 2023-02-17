@@ -13,7 +13,7 @@ export const Footer = () => {
                 <li className="nav-item"><a href="http://localhost:3000/" className="nav-link px-2 text-muted">GRUPALES</a></li>
                 <li className="nav-item"><a href="http://localhost:3000/" className="nav-link px-2 text-muted">AUTOS</a></li>
                 <li className="nav-item"><a href="http://localhost:3000/" className="nav-link px-2 text-muted">SEGUROS</a></li>
-                <li className="nav-item"><a href="http://localhost:3000/" className="nav-link px-2 text-muted">NOSOTROS</a></li>
+                <li className="nav-item"><a href="http://localhost:3000/" className="nav-link px-2 text-muted">CONTACTO</a></li>
                 </ul>
                 <p className="text-center text-muted">&copy; 2023 Company, Inc</p>
             </footer>
