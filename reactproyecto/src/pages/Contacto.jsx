@@ -31,7 +31,7 @@ const Contacto = ({CONTACTO}) => {
             <button> Send ✉ </button>
             <p></p>
             <button className="btn-retorno">
-                <Link to="/" >
+                <Link to="/" style ={{ textDecoration: "none"}}>
                  <span  className="btn-retorno">← Return</span>
                  </Link>
             </button>

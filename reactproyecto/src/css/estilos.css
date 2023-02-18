@@ -1,63 +1,93 @@
 
 /* carousel */
 .item img{
-    pointer-events: none;
+  pointer-events: none;
 }
-
 
 
 
 /* hero image */
 .hero-image {
 
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero.jpg");
-  
-    /* Set a specific height */
-    height: 100vh;
-    width: 100vw;
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero.jpg");
 
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+  /* Set a specific height */
+  height: 100vh;
+  width: 100vw;
 
-    object-fit: cover;
-  }
-  
-  /* Place text in the middle of the image */
-  .hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-  }
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 
-  /*----------------------------------HeroImage----------------------------------*/
+  object-fit: cover;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/*----------------------------------HeroImage----------------------------------*/
 .hero-text h1{
-  font-size: 50px;
+font-size: 50px;
 }
 
 .hero-text b{
-  color: #dc3d0d;
+color: #dc3d0d;
 }
 
 .hero-text p{
-  font-size:22px;
+font-size:22px;
 }
 
-  /*----------------------------------Carousel Instagram----------------------------------*/
-  .miCarouselInstagram{
-    width: 400px;
-  }
+/*----------------------------------Carousel Instagram----------------------------------*/
+.miCarouselInstagram{
+  width: 400px;
+}
 
-  .miCarouselInstagram button:hover{
-    background-color: transparent;
-  }
+.miCarouselInstagram button:hover{
+  background-color: transparent;
+}
 
-  .miCarouselInstagram button:focus-within{
-    background-color: transparent;
-  }
+.miCarouselInstagram button:focus-within{
+  background-color: transparent;
+}
+
+.SolTurismo {
+  color:  red;
+  font-size:xx-large;
+  text-align: center;
+  padding-left: 35%;
+  
+  
+}
+
+.elegir5soles {
+  text-align:justify;
+  text-indent: 1%;
+
+}
+
+.col {
+
+  text-align:justify;
+  line-height: 2em;
+  font-family:'Segoe UI';
+  padding-bottom: 10%;
+  padding-top: 2%;
+
+}
+
+.footer-container {
+
+  background:  #cecccbec; 
+}
+

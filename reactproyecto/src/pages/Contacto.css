@@ -22,7 +22,7 @@
  
 }
 
-h1 {
+.title-form {
   color:#eb0404;
   font-family: 'Gill Sans MT';
   margin: 0;
@@ -77,14 +77,13 @@ textarea {
 button {
   width: 8rem;
   border-radius: 8px;
-  font-size: 1.1rem;
   color: rgb(0, 7, 0);
   background-color: #e6e0c4;
   cursor: pointer;
   font-family:'Gill Sans MT';
-  text-decoration: none;
-  box-shadow: none;
-  text-decoration-line: none;
+  font-size:100%;
+  border-style: solid;
+
   
 }
 
@@ -93,9 +92,14 @@ button:focus {
   background-color:  #eb0404;
   font-size: 1.2rem;
   font-weight: 500;
-  color: #ffff;
+  
 }
 
 .btn-retorno{
-  color: black;
+  width: 8rem;
+  color: rgb(0, 7, 0);
+  cursor: pointer;
+  font-family:'Gill Sans MT';
+  font-size:100%;
+ 
 }
