@@ -23,10 +23,10 @@ const Seguros = () => {
                 <a href="http://localhost:3000/">AUTOS</a>
               </li>
               <li>
-                <Link to="/">Seguros</Link>
+                <Link to="">Seguros</Link>
               </li>
               <li>
-                <Link to="contacto">Contacto</Link>
+                <Link to="../contacto">Contacto</Link>
               </li>
             </ul>
             <div className="cart">

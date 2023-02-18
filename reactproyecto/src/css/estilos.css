@@ -1,16 +1,13 @@
-
-/* carousel */
-.item img{
+/*estilos Carousel.jsx----------------------------------------------------------------------------- */
+.item img {
   pointer-events: none;
 }
 
-
-
-/* hero image */
+/*estilos HeroImage.jsx----------------------------------------------------------------------------*/
 .hero-image {
-
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/hero.jpg");
 
   /* Set a specific height */
   height: 100vh;
@@ -35,59 +32,57 @@
   color: white;
 }
 
-/*----------------------------------HeroImage----------------------------------*/
-.hero-text h1{
-font-size: 50px;
+/*estilos HeroImage.jsx----------------------------------------------------------------------------*/
+.hero-text h1 {
+  font-size: 50px;
 }
 
-.hero-text b{
-color: #dc3d0d;
+.hero-text b {
+  color: #dc3d0d;
 }
 
-.hero-text p{
-font-size:22px;
+.hero-text p {
+  font-size: 22px;
 }
 
-/*----------------------------------Carousel Instagram----------------------------------*/
-.miCarouselInstagram{
+/*estilos CarouselInstagram.jsx--------------------------------------------------------------------*/
+
+.miCarouselInstagram {
   width: 400px;
 }
 
-.miCarouselInstagram button:hover{
+.miCarouselInstagram button:hover {
   background-color: transparent;
 }
 
-.miCarouselInstagram button:focus-within{
+.miCarouselInstagram button:focus-within {
   background-color: transparent;
 }
 
 .SolTurismo {
-  color:  red;
-  font-size:xx-large;
+  color: red;
+  font-size: xx-large;
   text-align: center;
   padding-left: 35%;
-  
-  
 }
 
-.elegir5soles {
-  text-align:justify;
-  text-indent: 1%;
+/* estilos Body.jsx-------------------------------------------------------------------------------- */
 
+.elegir5soles {
+  text-align: justify;
+  text-indent: 1%;
 }
 
 .col {
-
-  text-align:justify;
+  text-align: justify;
   line-height: 2em;
-  font-family:'Segoe UI';
+  font-family: "Segoe UI";
   padding-bottom: 10%;
   padding-top: 2%;
-
 }
+
+/*estilos Footer.jsx-------------------------------------------------------------------------------*/
 
 .footer-container {
-
-  background:  #cecccbec; 
+  background: #cecccbec;
 }
-

@@ -1,7 +1,7 @@
 import React from "react";
+import '../css/estilos.css'
 
-// style={{ position: 'absolute', padding: '10% 10%', bottom: 0, width: '100%', textAlign: 'center' }}
-// style={{ position: 'absolute', padding: '10% 10%', bottom: 0, width: '100%', textAlign: 'center' }}
+import { Outlet, Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -33,23 +33,18 @@ const Footer = () => {
             </a>
           </li>
           <li className="nav-item">
-            <a
-              href="http://localhost:3000/"
-              className="nav-link px-2 text-muted"
-            >
-              SEGUROS
-            </a>
+            <Link to="seguros" className="nav-link px-2 text-muted">SEGUROS</Link>
           </li>
           <li className="nav-item">
-            <a
-              href="http://localhost:3000/"
-              className="nav-link px-2 text-muted"
-            >
-              CONTACTO
-            </a>
+
+            <Link to="contacto" className="nav-link px-2 text-muted">CONTACTO</Link>
+
           </li>
         </ul>
         <p className="text-center text-muted">&copy; 2023 Company, Inc</p>
+
+        <Outlet/>
+
       </footer>
     </div>
   );
