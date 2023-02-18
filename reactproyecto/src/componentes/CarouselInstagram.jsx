@@ -8,6 +8,7 @@ const CarouselInstagram = () => {
   /**useEffect para llamar api instagram */
   useEffect(() => {
     let accessToken ='IGQVJYb3duWkswMmJKMFc2ZA0lGOUR1b2tjYWlZATjNaaWQyLVFRZAHdoMjlVOHotWFg3dFFsamZASWmFXRTRnV2dpcERzUEZAWNUYzZAUxUR05mUnhxUUxiVzVkUmotRmVBVTQ2TjlDOUlPcnlya0xpbnZAXWQZDZD'
+
     let url =
       "https://graph.instagram.com/me/media?fields=id,caption,media_url&access_token=";
     const cargarPerfilInstagram = async () => {
@@ -30,7 +31,7 @@ const CarouselInstagram = () => {
     <div className="container-fluid d-flex flex-column align-items-center my-5">
         <div className="container my-3">
             <h1 className="h1">
-                <a href="https://www.instagram.com/solturismo5555/" target={"_blank"}> Sol Turismo - Instagram </a>
+                <a href="https://www.instagram.com/solturismo5555/" target={"_blank"} style ={{ textDecoration: "none"}} className= "SolTurismo"> Sol Turismo - Instagram </a>
             </h1>
         </div>
       <div
