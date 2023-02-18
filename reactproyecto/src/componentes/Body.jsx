@@ -1,10 +1,12 @@
 import React from "react";
+import '../css/estilos.css'
+
 
 const Body = () => {
   return (
     <div className="Body container-fluid">
       <h1 className="titulo1"> ¿Por qué Nosotros?</h1>
-      <div className="elegir5soles" container-fluid text-center>
+      <div className="elegir5soles">
         <div className="row" >
           <div className="col" >
             ¿Por qué elegir Cinco Soles Turismo? Despegar es una
