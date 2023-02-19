@@ -1,14 +1,43 @@
-import React from "react";
-import '../css/estilos.css'
-
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import "../css/estilos.css";
 
 const Body = () => {
+  const [arregloCitas, setArregloCitas] = useState([]);
+
+  useEffect(() => {
+    const cargarCitas = async () => {
+      try {
+        const response = await axios.get("http://localhost:5555/info-body");
+
+        if (response.status === 200) {
+          console.log(response.data);
+          setArregloCitas(response.data);
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    cargarCitas();
+  }, []);
+
   return (
     <div className="Body container-fluid">
       <h1 className="titulo1"> ¿Por qué Nosotros?</h1>
       <div className="elegir5soles">
-        <div className="row" >
-          <div className="col" >
+        <div className="row">
+          {arregloCitas.map((elementoCita) => {
+            return( 
+
+            <div className="col">{elementoCita.parrafo}</div>
+            
+            );
+          })}
+
+            {/* el texto se guardo en la bd.json y se consume con axios */}
+
+          {/* <div className="col" >
             ¿Por qué elegir Cinco Soles Turismo? Despegar es una
             de las agencias de viale con más trayectoria de Latinoamérica,
             reconocida y recomendada por miles de viajeros de todo el
@@ -18,8 +47,8 @@ const Body = () => {
             o necesitás ayuda? Podés llamarnos en todo momento al centro de
             Despegar atención al cliente y viajá con la confianza de saber que
             estamos con vos
-          </div>
-          <div className="col">
+          </div> */}
+          {/* <div className="col">
             ¿Cómo comprar en Cinco Soles Turismo? En Despegar podés comprar todo
             para tus vacaciones fácilmente. Primero, ingresá la información
             de tu viaje en el buscador. Compará entre cientos de opciones y
@@ -28,8 +57,8 @@ const Body = () => {
             . ¡Aprovechá las promociones bancarias de Despegar. Por
             último, tocá nuevamente en Comprar y ¡listo! Te mandamos los
             vouchers por mail y ya podés empezar a disfrutar tu viaje.
-          </div>
-          <div className="col">
+          </div> */}
+          {/* <div className="col">
             ¿Se puede modificar o cancelar una compra? En Despegar podés
             gestionar el cambio o la cancelación de una reserva, aunque tené en
             cuenta que algunos proveedores o tarifas no lo permiten o cobran un
@@ -37,7 +66,7 @@ const Body = () => {
             reserva para todos o algunos de los pasajeros. Lo que no podés hacer
             es cambio de titularidad a otra persona. Recordá revisar las
             políticas de cambio y cancelación de tu reserva en Mi Cuenta.
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

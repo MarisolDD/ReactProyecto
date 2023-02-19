@@ -29,6 +29,7 @@ const Navbar = () => {
           <li>
             <Link to="contacto">Contacto</Link>
           </li>
+
         </ul>
         <div className="cart">
           <box-icon name="cart"></box-icon>
