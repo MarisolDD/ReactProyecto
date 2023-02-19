@@ -7,9 +7,11 @@ import ItemCarrito from "../componentes/ItemCarrito";
 
 
 const ShoppingCar = () => {
+    
     const [state, dispatch]=useReducer(cartReducer, cartInitialState );
 
     const{ products, cart } = state
+
     const addToCart = (id) => {
         dispatch({type: TYPES.ADD_TO_CART, payload: id });
     };

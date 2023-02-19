@@ -46,7 +46,7 @@ export function cartReducer(state, action) {
     
       return ItemCarrito ? {} : {
             ...state,
-            cart: [state.cart, { ...nuevoItem, cantidad: 1 }],
+            cart: [...state.cart, { ...nuevoItem, cantidad: 1 }],
           };
         }
     case TYPES.REMOVE_ONE_FROM_CART: {
