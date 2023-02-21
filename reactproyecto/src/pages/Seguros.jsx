@@ -3,7 +3,7 @@ import LOGO from "../images/Logo.jpg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link, Outlet } from "react-router-dom";
 import Footer from "../componentes/Footer";
-import HeroImage from "../componentes/HeroImage"
+import HeroImage from "../componentes/HeroImage";
 import CardsSeguros from "../componentes/CardsSeguros";
 
 const Seguros = () => {
@@ -37,12 +37,12 @@ const Seguros = () => {
             <box-icon name="cart"></box-icon>
             <span className="item_total">0</span>
           </div>
+          <Outlet />
         </header>
       </div>
-
-      <HeroImage/>
-      <CardsSeguros/>  
-      <Footer/>
+      <HeroImage />
+      <CardsSeguros />
+      <Footer />
     </>
   );
 };

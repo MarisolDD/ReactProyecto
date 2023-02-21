@@ -25,26 +25,35 @@ const ShoppingCar = () => {
 
   return (
     <>
-      <div>
-        <h1>Carrito de compras</h1>
-        <h2>Productos</h2>
+      <div className="container-fluid">
+        <div className="row-fluid text-center">
+          <h2 className="h2">Carrito de compras</h2>
+          <h3 className="h3">Productos</h3>
+        </div>
         <article className="row m-5">
           {products.map((producto) => (
             <Producto key={producto.id} data={producto} addToCart={addToCart} />
           ))}
         </article>
       </div>
-      <h2>Carrito</h2>
-      <article className="box">
-        <button onClick={clearCart}>Limpiar Carrito</button>
-        {cart.map((item, index) => (
-          <ItemCarrito
-            key={index}
-            data={item}
-            deleteFromCart={deleteFromCart}
-          />
-        ))}
-      </article>
+
+      <div className="container-fluid">
+        <div className="row text-center">
+          <h2 className="h2">Carrito</h2>
+        </div>
+        <article className="row m-5">
+          <div className="container">
+            <button className="btn btn-dark" onClick={clearCart}>Limpiar Carrito</button>
+          </div>
+          {cart.map((item, index) => (
+            <ItemCarrito
+              key={index}
+              data={item}
+              deleteFromCart={deleteFromCart}
+            />
+          ))}
+        </article>
+      </div>
     </>
   );
 };

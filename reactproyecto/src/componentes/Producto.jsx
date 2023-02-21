@@ -22,10 +22,10 @@ const Producto = ({ data, addToCart }) => {
         </div>
 
         <div className="row m-2 p-2">
-            <button className="btn bg-dark text-success border my-1" onClick={() => addToCart(id)}>
+            <button className="btn bg-dark text-success border my-1 rounded-pill" onClick={() => addToCart(id)}>
               Agregar
             </button>
-            <button className="btn bg-dark text-success border my-1" onClick={() => addToCart(id)}>Comprar</button>
+            <button className="btn bg-dark text-success border my-1 rounded-pill" onClick={() => addToCart(id)}>Comprar</button>
         </div>
     </div>
   );
