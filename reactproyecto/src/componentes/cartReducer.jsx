@@ -6,25 +6,25 @@ export const cartInitialState = {
       id: 1,
       nombre: "Alquiler auto",
       precio: 10000,
-      img: "bariloche.jpeg"
+      img: "img1.jpg"
     },
     {
       id: 2,
       nombre: "Alojamiento",
       precio: 8000,
-      img: "calafate.jpeg",
+      img: "img2.jpg",
     },
     {
       id: 3,
       nombre: "Excursiones",
       precio: 10000,
-      img: "iguazu.jpeg",
+      img: "img3.jpg",
     },
     {
       id: 4,
       nombre: "Vuelos cortos",
       precio: 85000,
-      img: "jujuy.jpeg",
+      img: "img4.jpg",
     },
   ],
   cart: [],

@@ -1,21 +1,34 @@
-import React from 'react'
-
+import React from "react";
 
 const Producto = ({ data, addToCart }) => {
-    let { id, nombre, img, precio } = data;
+  let { id, nombre, img, precio } = data;
 
+  return (
+    <div className="container-fluid w-25 h-25 border border-success align-content-center p-1">
 
-return (
-    <div style={{border: "thin solid gray" ,padding: "1rem"}}>
-        <h4>{nombre}</h4>
-        <img alt="Imagen-Producto" src={img}></img>
-        <img src={`../images/${img}`} alt=" otra imagen" style={{width:`500px`, height:`500px`, border: `solid 1px black`}}/>
-        <h5>$ {precio}.00</h5>
-        <button className='product-btn' onClick={() => addToCart(id)}>Agregar</button>
-        <button onClick={() =>addToCart(id)}>Comprar</button>
-        <h4 className="h4">{`../images/${img}`}</h4>
+        <div className="row text-center my-2">
+            <h1 className="h1">{nombre}</h1>
+        </div>
+
+        <div className="row m-2">
+            <img
+              src={`assets/${img}`}
+              alt="IMAGEN-PRODUCTO"
+            />
+        </div>
+
+        <div className="row text-center">
+            <h2>$ {precio}.00</h2>
+        </div>
+
+        <div className="row m-2 p-2">
+            <button className="btn bg-dark text-success border my-1" onClick={() => addToCart(id)}>
+              Agregar
+            </button>
+            <button className="btn bg-dark text-success border my-1" onClick={() => addToCart(id)}>Comprar</button>
+        </div>
     </div>
-    );
+  );
 };
 
 export default Producto;

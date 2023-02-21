@@ -27,12 +27,10 @@ const ShoppingCar = () => {
     <>
       <div>
         <h1>Carrito de compras</h1>
-        <h2>Procutos</h2>
-        <article className="box grid-responsive">
+        <h2>Productos</h2>
+        <article className="row m-5">
           {products.map((producto) => (
-            <Producto key={producto.id} 
-            data={producto} 
-            addToCart={addToCart} />
+            <Producto key={producto.id} data={producto} addToCart={addToCart} />
           ))}
         </article>
       </div>
