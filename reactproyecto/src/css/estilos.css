@@ -84,5 +84,10 @@
 /*estilos Footer.jsx-------------------------------------------------------------------------------*/
 
 .footer-container {
-  background: #cecccbec;
+  background: #ffffff;
+  color: black;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
+
