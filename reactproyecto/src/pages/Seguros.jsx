@@ -3,6 +3,8 @@ import LOGO from "../images/Logo.jpg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link, Outlet } from "react-router-dom";
 import Footer from "../componentes/Footer";
+import HeroImage from "../componentes/HeroImage"
+import CardsSeguros from "../componentes/CardsSeguros";
 
 const Seguros = () => {
   return (
@@ -38,6 +40,8 @@ const Seguros = () => {
         </header>
       </div>
 
+      <HeroImage/>
+      <CardsSeguros/>  
       <Footer/>
     </>
   );
