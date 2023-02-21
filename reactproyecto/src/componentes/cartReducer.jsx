@@ -1,5 +1,4 @@
 import { TYPES } from "./actioncar";
-// import Producto from "./Producto";
 
 export const cartInitialState = {
   products: [
@@ -7,25 +6,25 @@ export const cartInitialState = {
       id: 1,
       nombre: "Alquiler auto",
       precio: 10000,
-      img: {},
+      img: "bariloche.jpeg"
     },
     {
       id: 2,
       nombre: "Alojamiento",
       precio: 8000,
-      img: {},
+      img: "calafate.jpeg",
     },
     {
       id: 3,
       nombre: "Excursiones",
       precio: 10000,
-      img: {},
+      img: "iguazu.jpeg",
     },
     {
       id: 4,
       nombre: "Vuelos cortos",
       precio: 85000,
-      img: {},
+      img: "jujuy.jpeg",
     },
   ],
   cart: [],
