@@ -33,9 +33,7 @@ const Footer = () => {
           </li>
         </ul>
         <p className="text-center text-muted">&copy; 2023 Company, Inc</p>
-
         <Outlet/>
-
       </footer>
     </div>
   );
