@@ -4,7 +4,7 @@ const Producto = ({ data, addToCart }) => {
   let { id, nombre, img, precio } = data;
 
   return (
-    <div className="container-fluid border border-success">
+    <div className="container border border-success w-100 h-100 my-4">
 
         <div className="row text-center">
             <h3 className="h3">{nombre}</h3>
