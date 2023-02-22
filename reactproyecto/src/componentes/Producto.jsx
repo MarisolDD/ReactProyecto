@@ -4,13 +4,13 @@ const Producto = ({ data, addToCart }) => {
   let { id, nombre, img, precio } = data;
 
   return (
-    <div className="container-fluid w-25 h-25 border border-success align-content-center p-1">
+    <div className="container-fluid border border-success">
 
-        <div className="row text-center my-2">
-            <h1 className="h1">{nombre}</h1>
+        <div className="row text-center">
+            <h3 className="h3">{nombre}</h3>
         </div>
 
-        <div className="row m-2">
+        <div className="row">
             <img
               src={`assets/${img}`}
               alt="IMAGEN-PRODUCTO"
@@ -18,14 +18,14 @@ const Producto = ({ data, addToCart }) => {
         </div>
 
         <div className="row text-center">
-            <h2>$ {precio}.00</h2>
+            <h3 className="h3">$ {precio}.00</h3>
         </div>
 
-        <div className="row m-2 p-2">
-            <button className="btn bg-dark text-success border my-1 rounded-pill" onClick={() => addToCart(id)}>
+        <div className="row m-1">
+            <button className="btn bg-dark text-white rounded-pill m-1" onClick={() => addToCart(id)}>
               Agregar
             </button>
-            <button className="btn bg-dark text-success border my-1 rounded-pill" onClick={() => addToCart(id)}>Comprar</button>
+            <button className="btn bg-dark text-white rounded-pill m-1" onClick={() => addToCart(id)}>Comprar</button>
         </div>
     </div>
   );
