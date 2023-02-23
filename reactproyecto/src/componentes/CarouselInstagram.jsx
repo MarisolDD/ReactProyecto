@@ -7,7 +7,12 @@ const CarouselInstagram = () => {
 
   /**useEffect para llamar api instagram */
   useEffect(() => {
+<<<<<<< HEAD
     let accessToken = process.env.REACT_APP_TOKEN_INSTRAGRAM
+=======
+    let accessToken =
+      "IGQVJYb3duWkswMmJKMFc2ZA0lGOUR1b2tjYWlZATjNaaWQyLVFRZAHdoMjlVOHotWFg3dFFsamZASWmFXRTRnV2dpcERzUEZAWNUYzZAUxUR05mUnhxUUxiVzVkUmotRmVBVTQ2TjlDOUlPcnlya0xpbnZAXWQZDZD";
+>>>>>>> dev
 
     let url =
       "https://graph.instagram.com/me/media?fields=id,caption,media_url&access_token=";
@@ -29,11 +34,19 @@ const CarouselInstagram = () => {
 
   return (
     <div className="container-fluid d-flex flex-column align-items-center my-5">
-        <div className="container my-3">
-            <h1 className="h1">
-                <a href="https://www.instagram.com/solturismo5555/" target={"_blank"} style ={{ textDecoration: "none"}} className= "SolTurismo"> Sol Turismo - Instagram </a>
-            </h1>
-        </div>
+      <div className="container my-3">
+        <h1 className="h1">
+          <a
+            href="https://www.instagram.com/solturismo5555/"
+            target={"_blank"}
+            style={{ textDecoration: "none" }}
+            className="SolTurismo"
+          >
+            {" "}
+            Sol Turismo - Instagram{" "}
+          </a>
+        </h1>
+      </div>
       <div
         id="carousel-instagram"
         className="carousel slide miCarouselInstagram"
