@@ -1,5 +1,4 @@
 import React from "react";
-
 const Producto = ({ data, addToCart }) => {
   let { id, nombre, img, precio } = data;
 

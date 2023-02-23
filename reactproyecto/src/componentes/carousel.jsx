@@ -26,15 +26,16 @@ const Carousel = () => {
   }, []);
 
   return (
-    <motion.div className="container-fluid border">
+    <motion.div className="container-fluid my-5">
+      <h1 className="h1 text-center">Los destinos mas elegidos por nuestros clientes</h1>
       <motion.div
-        className="container-fluid d-flex p-1 mx-2"
+        className="container-fluid d-flex p-1 mx-2 w-100"
         drag="x"
         dragConstraints={{ right: 900, left: -900 }}
       >
         {arreglo.map((elemento) => (
           <motion.div
-            className="item border border-warning border-1 m-2"
+            className="item border border-warning border-1 m-1"
             key={elemento.id}
           >
             <img
@@ -42,6 +43,7 @@ const Carousel = () => {
               src={`../assets/${elemento.src}`}
               alt={elemento.title}
             />
+            <h5 className="h5 text-center">{elemento.title}</h5>
           </motion.div>
         ))}
       </motion.div>

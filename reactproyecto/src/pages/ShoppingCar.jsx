@@ -25,7 +25,6 @@ const ShoppingCar = () => {
 
   return (
     <div className="container-fluid">
-
       <div className="row">
         <div className="row text-center">
           <h2 className="h2">Carrito de compras</h2>
@@ -34,7 +33,11 @@ const ShoppingCar = () => {
         <div className="row">
           {products.map((producto) => (
             <div className="col-12 col-md-6 col-xl-3">
-              <Producto key={producto.id} data={producto} addToCart={addToCart} />
+              <Producto
+                key={producto.id}
+                data={producto}
+                addToCart={addToCart}
+              />
             </div>
           ))}
         </div>

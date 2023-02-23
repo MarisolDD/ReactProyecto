@@ -2,63 +2,129 @@
     "imagen":[
         {
             "id":1,
-            "src":"img1.jpg",
-            "title":"imagen-1",
-            "caption":""
+            "src":"chalten.jpg",
+            "title":"El Chalten",
+            "caption":"El Chalten"
         },
         {
             "id":2,
-            "src":"img2.jpg",
-            "title":"imagen-2",
-            "caption":""
+            "src":"chalten2.jpg",
+            "title":"El Chalten",
+            "caption":"El Chalten"
         },
         {
             "id":3,
-            "src":"img3.jpg",
-            "title":"imagen-3",
-            "caption":""
+            "src":"chalten3.jpg",
+            "title":"El Chalten",
+            "caption":"El Chalten"
         },
         {
             "id":4,
-            "src":"img4.jpg",
-            "title":"imagen-4",
-            "caption":""
+            "src":"costa_atlantica.jpg",
+            "title":"Costa Atlantica",
+            "caption":"Costa Atlantica"
         },
         {
             "id":5,
-            "src":"img5.jpg",
-            "title":"imagen-5",
-            "caption":""
+            "src":"costa_atlantica2.jpg",
+            "title":"Costa Atlantica",
+            "caption":"Costa Atlantica"
         },
         {
             "id":6,
-            "src":"img1.jpg",
-            "title":"imagen-1",
-            "caption":""
+            "src":"costa_atlantica3.jpg",
+            "title":"Costa Atlantica",
+            "caption":"Costa Atlantica"
         },
         {
             "id":7,
-            "src":"img2.jpg",
-            "title":"imagen-2",
-            "caption":""
+            "src":"costa_atlantica4.jpg",
+            "title":"Costa Atlantica",
+            "caption":"Costa Atlantica"
         },
         {
             "id":8,
-            "src":"img3.jpg",
-            "title":"imagen-3",
-            "caption":""
+            "src":"jujuy_humahuaca.jpg",
+            "title":"Jujuy-Humahuaca",
+            "caption":"Jujuy-Humahuaca"
         },
         {
             "id":9,
-            "src":"img4.jpg",
-            "title":"imagen-4",
-            "caption":""
+            "src":"jujuy_humahuaca2.jpg",
+            "title":"Jujuy-Humahuaca",
+            "caption":"Jujuy-Humahuaca"
         },
         {
             "id":10,
-            "src":"img5.jpg",
-            "title":"imagen-10",
-            "caption":""
+            "src":"jujuy_purmamarca.jpg",
+            "title":"Jujuy-Purmamarca",
+            "caption":"Jujuy-Purmamarca"
+        },
+        {
+            "id":11,
+            "src":"jujuy_tilcara.jpg",
+            "title":"Jujuy-Tilcara",
+            "caption":"Jujuy-Tilcara"
+        },
+        {
+            "id":12,
+            "src":"mendoza_aconcagua.jpg",
+            "title":"Mendoza-Aconcagua",
+            "caption":"Mendoza-Aconcagua"
+        },
+        {
+            "id":13,
+            "src":"mendoza_atuel.jpg",
+            "title":"Mendoza-Atuel",
+            "caption":"Mendoza-Atuel"
+        },
+        {
+            "id":14,
+            "src":"mendoza_cordillera.jpg",
+            "title":"Mendoza-Cordillera",
+            "caption":"Mendoza-Cordillera"
+        },
+        {
+            "id":15,
+            "src":"mendoza_iglesia.jpg",
+            "title":"Mendoza-Iglesia",
+            "caption":"Mendoza-Iglesia"
+        },
+        {
+            "id":16,
+            "src":"mendoza_uspallata.jpg",
+            "title":"Mendoza-Uspallata",
+            "caption":"Mendoza-Uspallata"
+        },
+        {
+            "id":17,
+            "src":"san_luis_catedral.jpg",
+            "title":"San Luis-Catedral",
+            "caption":"San Luis-Catedral"
+        },
+        {
+            "id":18,
+            "src":"san_luis_merlo.jpg",
+            "title":"San Luis-Merlo",
+            "caption":"San Luis-Merlo"
+        },
+        {
+            "id":19,
+            "src":"san_luis_merlo1.jpg",
+            "title":"San Luis-Merlo",
+            "caption":"San Luis-Merlo"
+        },
+        {
+            "id":20,
+            "src":"san_luis_merlo2.jpg",
+            "title":"San Luis-Merlo",
+            "caption":"San Luis-Merlo"
+        },
+        {
+            "id":20,
+            "src":"san_luis_merlo.jpg",
+            "title":"San Luis",
+            "caption":"San Luis"
         }
     ],
     "info-body":[
