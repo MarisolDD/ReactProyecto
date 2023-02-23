@@ -10,7 +10,7 @@ function Card({title,imageSource, url, text}) {
     <h4 className='card-title'>{title}</h4>
         <p className='card-text text-secondary'>{text}</p>
         <a href={url} className='btn btn-lg btn-warning rounded-2'> 
-        Select</a>
+        Más Info</a>
  
     </div>
     </div>
