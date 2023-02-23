@@ -29,7 +29,7 @@ const Carousel = () => {
     <motion.div className="container-fluid my-5">
       <h1 className="h1 text-center">Los destinos mas elegidos por nuestros clientes</h1>
       <motion.div
-        className="container-fluid d-flex p-1 mx-2 w-100"
+        className="container-fluid d-flex p-1 mx-2"
         drag="x"
         dragConstraints={{ right: 900, left: -900 }}
       >
@@ -39,7 +39,7 @@ const Carousel = () => {
             key={elemento.id}
           >
             <img
-              className="img-fluid w-100 h-100"
+              className="container h-100 w-100"
               src={`../assets/${elemento.src}`}
               alt={elemento.title}
             />
