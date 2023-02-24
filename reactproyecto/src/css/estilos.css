@@ -81,7 +81,7 @@
 
 .elegir5soles {
   text-align: justify;
-  text-indent: 1%;
+  text-indent: 2%;
 }
 
 .col {
@@ -91,6 +91,11 @@
   padding-bottom: 10%;
   padding-top: 2%;
 }
+.contenedor-icono svg {
+  width: 400px;
+  height: 30px;
+}
+
 
 /*estilos Footer.jsx-------------------------------------------------------------------------------*/
 

@@ -7,6 +7,17 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.box{
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 0 #00000025;
+}
+.grid-responsive{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
