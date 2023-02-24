@@ -29,7 +29,10 @@ const Navbar = () => {
           <li>
             <Link to="contacto">Contacto</Link>
           </li>
-        </ul>
+          <li>
+            <Link to="shoppingCar">ShoppingCar</Link>
+          </li>
+          </ul>
         <div className="cart">
           <box-icon name="cart"></box-icon>
           <span className="item_total">0</span>
