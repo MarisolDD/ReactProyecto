@@ -1,7 +1,7 @@
 import React from "react";
 import HeroImage from "../componentes/HeroImage";
 import Cards from "../componentes/Cards";
-import Carousel from "../componentes/Carousel";
+import Carousel from "../componentes/carousel";
 import CarouselInstagram from "../componentes/CarouselInstagram";
 import Body from "../componentes/Body";
 
