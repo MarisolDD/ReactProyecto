@@ -12,6 +12,8 @@ import Contacto from "./pages/Contacto.jsx";
 import Seguros from "./pages/Seguros.jsx";
 import Inicio from "./pages/Inicio";
 import ShoppingCar from "./pages/ShoppingCar";
+import Navbar from "./componentes/Navbar"
+import Footer from "./componentes/Footer";
 
 function App() {
   return (
