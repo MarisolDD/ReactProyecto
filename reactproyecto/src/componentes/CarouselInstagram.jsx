@@ -7,13 +7,7 @@ const CarouselInstagram = () => {
 
   /**useEffect para llamar api instagram */
   useEffect(() => {
-<<<<<<< HEAD
-    let accessToken = process.env.REACT_APP_TOKEN_INSTRAGRAM
-=======
-    let accessToken =
-      "IGQVJYb3duWkswMmJKMFc2ZA0lGOUR1b2tjYWlZATjNaaWQyLVFRZAHdoMjlVOHotWFg3dFFsamZASWmFXRTRnV2dpcERzUEZAWNUYzZAUxUR05mUnhxUUxiVzVkUmotRmVBVTQ2TjlDOUlPcnlya0xpbnZAXWQZDZD";
->>>>>>> dev
-
+    let accessToken = process.env.REACT_APP_TOKEN_INSTAGRAM
     let url =
       "https://graph.instagram.com/me/media?fields=id,caption,media_url&access_token=";
     const cargarPerfilInstagram = async () => {
