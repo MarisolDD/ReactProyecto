@@ -1,6 +1,17 @@
 /*estilos Carousel.jsx----------------------------------------------------------------------------- */
-.item img {
+/* .item img {
   pointer-events: none;
+  object-fit: cover;
+}
+
+.item{
+  width: 250px;
+  height: 250px;
+  flex-wrap: nowrap;
+} */
+
+.miTarjeta{
+  width: 300px;
 }
 
 /*estilos HeroImage.jsx----------------------------------------------------------------------------*/

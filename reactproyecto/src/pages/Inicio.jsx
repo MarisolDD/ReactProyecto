@@ -14,7 +14,7 @@ const Inicio = () => {
       <div className="row">
           <Cards />
       </div>
-      <div className="row">
+      <div className="row bg-dark">
           <Carousel />
       </div>
       <div className="row">
