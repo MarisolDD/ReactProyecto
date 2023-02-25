@@ -26,26 +26,30 @@ const Carousel = () => {
   }, []);
 
   return (
-    <motion.div className="container-fluid border">
-      <motion.div
-        className="container-fluid d-flex p-1 mx-2"
-        drag="x"
-        dragConstraints={{ right: 900, left: -900 }}
-      >
-        {arreglo.map((elemento) => (
-          <motion.div
-            className="item border border-warning border-1 m-2"
-            key={elemento.id}
-          >
-            <img
-              className="img-fluid w-100 h-100"
-              src={`../assets/${elemento.src}`}
-              alt={elemento.title}
-            />
-          </motion.div>
-        ))}
+
+    <div className="container-fluid w-100 miCarousel mt-2">
+      <div className="row">
+        <h1 className="h1 text-center">Los destinos mas elegidos por nuestros clientes</h1>
+        </div>
+      <motion.div drag="x" dragConstraints={{ right: 900, left: -10200 }} className="d-flex justify-content-between align-items-center flex-nowrap">
+      {arreglo.map((e, index) => {
+        return (
+            <motion.div className="item mx-1 rounded-5" key={index}>
+              <div className="col-3 miTarjeta p-1 m-5">
+                <img
+                  src={`../assets/${e.src}`}
+                  alt="imagen"
+                  className="miImagen"
+                />
+                <div className="body mt-2">
+                  <h4 className="h4 text-center">{e.title}</h4>
+                </div>
+              </div>
+            </motion.div>
+        );
+      })}
       </motion.div>
-    </motion.div>
+    </div>
   );
 };
 

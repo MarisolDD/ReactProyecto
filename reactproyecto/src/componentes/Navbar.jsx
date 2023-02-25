@@ -34,8 +34,10 @@ const Navbar = () => {
           </li>
           </ul>
         <div className="cart">
-          <box-icon name="cart"></box-icon>
-          <span className="item_total">0</span>
+          <Link to="shoppingCar">
+            <box-icon name="cart"></box-icon>
+            <span className="item_total">0</span>
+          </Link>
         </div>
 
         <Outlet />

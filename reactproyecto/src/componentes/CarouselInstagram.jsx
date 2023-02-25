@@ -33,6 +33,7 @@ const CarouselInstagram = () => {
           <a
             href="https://www.instagram.com/solturismo5555/"
             target={"_blank"}
+            rel="noopener noreferrer"
             style={{ textDecoration: "none" }}
             className="SolTurismo"
           >
