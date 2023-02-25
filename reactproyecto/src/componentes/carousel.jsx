@@ -48,21 +48,28 @@ const Carousel = () => {
     //   </motion.div>
     // </motion.div>
 
-    <div className="d-flex justify-content-between align-items-center flex-nowrap">
+    <div className="container-fluid w-100 miCarousel mt-5">
+      <div className="row">
+        <h1 className="h1 text-center">Los destinos mas elegidos por nuestros clientes</h1>
+        </div>
+      <motion.div drag="x" dragConstraints={{ right: 900, left: -10200 }} className="d-flex justify-content-between align-items-center flex-nowrap">
       {arreglo.map((e, index) => {
         return (
-          <div className="col-3 mx-2 bg-warning miTarjeta">
-            <img
-              src={`../assets/${e.src}`}
-              alt="imagen"
-              className="miTarjeta"
-            />
-            <div className="body">
-              <h4 className="h4 text-center text-white">{e.title}</h4>
-            </div>
-          </div>
+            <motion.div className="item bg-dark mx-2 text-warning rounded-5 miTarjeta2">
+              <div className="col-3 bg-warning miTarjeta p-1 m-5">
+                <img
+                  src={`../assets/${e.src}`}
+                  alt="imagen"
+                  className="miImagen"
+                />
+                <div className="body mt-2">
+                  <h4 className="h4 text-center">{e.title}</h4>
+                </div>
+              </div>
+            </motion.div>
         );
       })}
+      </motion.div>
     </div>
   );
 };
