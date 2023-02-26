@@ -32,7 +32,7 @@ const ShoppingCar = () => {
         </div>
         <div className="row">
           {products.map((producto) => (
-            <div className="col-12 col-md-6 col-xl-3">
+            <div className="col-12 col-md-6 col-xl-3" key={producto.id}>
               <Producto
                 key={producto.id}
                 data={producto}
@@ -54,7 +54,7 @@ const ShoppingCar = () => {
         </div>
         <div className="row justify-content-center">
           {cart.map((item, index) => (
-            <div className="col-12 col-md-6 col-xl-3">
+            <div className="col-12 col-md-6 col-xl-3" key={index}>
               <ItemCarrito
                 key={index}
                 data={item}
