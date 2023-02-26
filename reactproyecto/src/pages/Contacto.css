@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Cookie&family=Fuzzy+Bubbles&family=Lobster&family=Pacifico&family=Redressed&family=Shadows+Into+Light&family=Vujahday+Script&display=swap');
 
 .img {
-    margin-bottom: auto;
-    align-items: center;    
+  margin-top: 10%;
+  margin-bottom: auto;
+  align-items: center;    
 }
 
 #contenedor {
     background: #FFFF,
     
 }
+
 .div-form {
-  /* margin: 1%; */
+  
   padding: 1%;
   background: linear-gradient(-45deg,  #ffff , #f5f2eeec, #FFFF,#f1e6c7);  
   height: 100vh;
@@ -18,7 +20,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin-bottom: 5%; */
+  margin-bottom: 15%;
  
 }
 
