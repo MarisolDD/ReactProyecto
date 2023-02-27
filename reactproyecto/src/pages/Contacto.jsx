@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import './Contacto.css';
 import cincosoles from './assets/cincosoles.png';
 import { Link } from "react-router-dom";
-
+      
 
 const Contacto = ({CONTACTO}) => {
     const sendEmail = (event) => {
@@ -28,7 +28,7 @@ const Contacto = ({CONTACTO}) => {
             <label>Message</label>
             <textarea name="user_message" id="" cols="30" rows="8"></textarea>
             <hr />
-            <button> Send ✉ </button>
+            <button onClick={() => alert('Gracias por contactarse, el correo ha sido eviado!')}> Send ✉ </button>
             <p></p>
             <button className="btn-retorno">
                 <Link to="/" style ={{ textDecoration: "none"}}>
@@ -39,5 +39,6 @@ const Contacto = ({CONTACTO}) => {
         </div>
       )
     }
+
 export default Contacto; 
 
