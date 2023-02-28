@@ -4,14 +4,60 @@ import "./ShoppingCar.css";
 import { cartInitialState, cartReducer } from "../componentes/cartReducer";
 import Producto from "../componentes/Producto";
 import ItemCarrito from "../componentes/ItemCarrito";
+import axios  from 'axios'
+
 
 const ShoppingCar = () => {
+
+  const path='http://localhost:5555/cart'
+
+  const guardarNewItem = async (item) => {
+    try {
+      item.quantity=1
+      const response = await axios.post(path,item)
+      console.log('guardamos item en carrito '+ response.status)
+
+    } catch (error) {
+      console.log('el item ya esta guardado en el carrito '+error)
+    }
+  }
+
+  const agregarCantidad=async(item)=>{
+    try {
+      const obj = {...item, quantity:item.quantity+1}
+
+      const response = await axios.put(path+`/${item.id}`, obj)
+
+      console.log(' se modifico la cantidad del obj' + response.status)
+    } catch (error) {
+      console.log(error.message)
+    }
+  }
+
+  const procesarItem=async(item)=>{
+    try {
+      const response = await axios.get(path+`/${item.id}`)
+      agregarCantidad(response.data)
+      console.log('buscarItemInCart '+response.status)
+    } catch (error) {
+      guardarNewItem(item)
+      console.log("el producto no existe en el carrito "+error)
+    }
+  }
+
   const [state, dispatch] = useReducer(cartReducer, cartInitialState);
 
   const { products, cart } = state;
 
   const addToCart = (id) => {
     dispatch({ type: TYPES.ADD_TO_CART, payload: id });
+
+    let newItem = products.find((e)=>e.id === id)
+
+    newItem.quantity=1
+
+    procesarItem(newItem)
+
   };
   const deleteFromCart = (id, all = false) => {
     if (all) {
