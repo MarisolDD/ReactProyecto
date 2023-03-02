@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Producto = ({ data, addToCart }) => {
+const Producto = ({ data, handleClick }) => {
     let { id, nombre, img, precio } = data;
 
 return (
@@ -22,10 +22,10 @@ return (
         </div>
 
         <div className='row m-1'>
-            <button className="btn bg-dark text-white rounded-pill m-1" onClick={() => addToCart(id)}>
+            <button className="btn bg-dark text-white rounded-pill m-1" onClick={() => handleClick(id)}>
             Agregar
             </button>
-            <button className='btn bg-dark text-white rounded-pill m-1' onClick={() =>addToCart(id)}>Comprar</button>
+            {/* <button className='btn bg-dark text-white rounded-pill m-1' onClick={() =>addToCart(id)}>Comprar</button> */}
         </div>
     </div>
     );

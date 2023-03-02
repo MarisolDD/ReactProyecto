@@ -141,6 +141,32 @@
       "parrafo": "¿Se puede modificar o cancelar una compra? En Despegar podés gestionar el cambio o la cancelación de una reserva, aunque tené en cuenta que algunos proveedores o tarifas no lo permiten o cobran un costo adicional por hacerio. También podés cancelar una reserva para todos o algunos de los pasajeros. Lo que no podés hacer es cambio de titularidad a otra persona. Recordá revisar las políticas de cambio y cancelación de tu reserva en Mi Cuenta."
     }
   ],
+  "products": [
+    {
+      "id": 1,
+      "nombre": "Alquiler auto",
+      "precio": 10000,
+      "img": "rencar.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Alojamiento",
+      "precio": 8000,
+      "img": "alojamiento.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Excursiones",
+      "precio": 10000,
+      "img": "paquetes.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Vuelos cortos",
+      "precio": 85000,
+      "img": "vuelos.jpg"
+    }
+  ],
   "cart": [
   ]
 }
