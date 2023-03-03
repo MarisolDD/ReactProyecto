@@ -17,13 +17,13 @@ const Navbar = () => {
         </a>
         <ul>
           <li>
-            <a href="http://localhost:3000/">DESTINOS</a>
+            <Link to="destinos">DESTINOS</Link>
           </li>
           <li>
-            <a href="http://localhost:3000/">GRUPALES</a>
+            <Link to="grupales">GRUPALES</Link>
           </li>
           <li>
-            <a href="http://localhost:3000/">AUTOS</a>
+            <Link to="autos">AUTOS</Link>
           </li>
           <li>
             <Link to="seguros">SEGUROS</Link>

@@ -9,6 +9,9 @@ import Navbar from "./componentes/Navbar";
 import Footer from "./componentes/Footer";
 import { createContext } from "react";
 import { AppProvaider } from "./AppProvaider";
+import Destinos from "./pages/Destinos"
+import Grupales from "./pages/Grupales"
+import Autos from "./pages/Grupales"
 
 export const ContextProductos = createContext();
 
@@ -21,6 +24,9 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Inicio />} />
+          <Route path="/Destinos" element={<Destinos/>}/>
+          <Route path="/Grupales" element={<Grupales/>}/>
+          <Route path="/Autos" element={<Autos/>}/>
           <Route path="/Contacto" element={<Contacto />} />
           <Route path="/Seguros" element={<Seguros />} />
           <Route path="/ShoppingCar" element={<ShoppingCar />} />
