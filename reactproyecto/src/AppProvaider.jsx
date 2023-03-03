@@ -16,34 +16,46 @@ const reducer = (state, action) => {
   console.log(action);
 
   switch (action.type) {
-    case TYPES.ADD_TO_CART: {
+    case TYPES.AGREGAR_ITEM: {
+      return {
+        ...state,
+        carrito: [...state.carrito, action.value],
+        itemsEnCarrito: state.itemsEnCarrito + 1,
+      };
+    }
+    case TYPES.SUMAR_UNO: {
+      return {
+        ...state,
+        carrito: state.carrito.map((item)=>item.id===action.value.id?{...item,cantidad:item.cantidad+1}:item),
+        itemsEnCarrito: state.itemsEnCarrito + 1,
+      };
+      
+    }
+    case TYPES.RESTAR_UNO: {
 
-          return{
-            ...state,
-            carrito : [...state.carrito, action.value],
-            itemsEnCarrito: state.itemsEnCarrito + 1
-          }
-    }
-    case TYPES.ADD_TO_QUANTITY:{
-        return {
-            ...state,
-            carrito: [...state.carrito, action.value],
-            itemsEnCarrito: state.itemsEnCarrito + 1
-          };
-    }
-    case TYPES.REMOVE_ITEM: {
-      return {
-        ...state,
+      let item_a_restar = state.carrito.find((e)=>e.id===action.value)
+
+      return item_a_restar.cantidad>1
+        ?{
+          ...state,
+          carrito: state.carrito.map((item)=>item.id===action.value?{...item,cantidad:item.cantidad-1}:item),
         itemsEnCarrito: state.itemsEnCarrito - 1,
-      };
+      }:{
+
+        ...state,
+        carrito: state.carrito.filter((item)=> item.id !== action.value),
+        itemsEnCarrito: state.itemsEnCarrito-1
+      }
     }
-    case TYPES.REMOVE_ALL_ITEM: {
+    case TYPES.QUITAR_ITEM: {
+      let item_a_quitar = state.carrito.find((e)=>e.id===action.value)
       return {
         ...state,
-        itemsEnCarrito: (state.itemsEnCarrito = 0),
+        carrito: state.carrito.filter((item)=> item.id !== action.value),
+        itemsEnCarrito: state.itemsEnCarrito - item_a_quitar.cantidad,
       };
     }
-    case TYPES.CLEAR_CART: {
+    case TYPES.LIMPIAR_CARRITO: {
       return estadoInicial;
     }
     default:

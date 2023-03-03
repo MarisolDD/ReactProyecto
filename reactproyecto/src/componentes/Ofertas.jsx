@@ -10,25 +10,26 @@ const Ofertas = () => {
   const handleClick=(id)=>{
 
     let nuevoItem = producto.find((e)=>e.id===id)
+    nuevoItem.cantidad=1
     
     let itemEnCarro = carrito.find((e)=>e.id===id)
 
     if(itemEnCarro){
       /*entra solo si el producto si existe en el carrito */
+      console.log('item existe en carro')
       dispatch({
-        type: TYPES.ADD_TO_QUANTITY,
+        type: TYPES.SUMAR_UNO,
         value: itemEnCarro
       })
 
     }else{
       /*entra solo si el producto no existe en el carrito */
+      console.log('ITEM NO EXISTE EN CARRO')
       dispatch({
-        type: TYPES.ADD_TO_CART,
+        type: TYPES.AGREGAR_ITEM,
         value: nuevoItem
       })
     }
-
-   
   }
 
 
