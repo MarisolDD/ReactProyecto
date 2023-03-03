@@ -17,7 +17,7 @@ return (
             style={{width:"100%",height:"250px", objectFit:"cover"}}/>
         </div>
 
-        <div className='row text-center mt-4'>
+        <div className='row text-center mt-5'>
             <h3 className="h3">$ {precio}.00</h3>
         </div>
 

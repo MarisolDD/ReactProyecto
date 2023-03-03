@@ -11,7 +11,7 @@ import { createContext } from "react";
 import { AppProvaider } from "./AppProvaider";
 import Destinos from "./pages/Destinos"
 import Grupales from "./pages/Grupales"
-import Autos from "./pages/Grupales"
+import Autos from "./pages/Autos"
 
 export const ContextProductos = createContext();
 

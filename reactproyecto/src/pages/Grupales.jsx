@@ -1,9 +1,11 @@
 import React from 'react'
-import HeroImage from '../componentes/HeroImage'
+import imagen from "../images/pagina_en_construccion2.png"
+
+
 function Grupales() {
   return (
-    <div className='container-fluid w-100 h-100 bg-dark text-white text-center'>
-    <HeroImage />
+    <div className='container-fluid w-50 bg-warning'>
+      <img src={imagen} alt="imagen" className='w-100' style={{marginTop:'120px'}}/>
     </div>
   )
 }
