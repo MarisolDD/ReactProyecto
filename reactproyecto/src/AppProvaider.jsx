@@ -13,7 +13,6 @@ const estadoInicial = {
 };
 
 const reducer = (state, action) => {
-  console.log(action);
 
   switch (action.type) {
     case TYPES.AGREGAR_ITEM: {
@@ -71,7 +70,6 @@ const AppProvaider = ({ children }) => {
     const cargarProductos = async () => {
       try {
         const res = await axios.get(path);
-        console.log(res.data);
         setProducto(res.data);
       } catch (error) {}
     };

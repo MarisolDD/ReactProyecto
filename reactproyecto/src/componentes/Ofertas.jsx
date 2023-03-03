@@ -16,7 +16,6 @@ const Ofertas = () => {
 
     if(itemEnCarro){
       /*entra solo si el producto si existe en el carrito */
-      console.log('item existe en carro')
       dispatch({
         type: TYPES.SUMAR_UNO,
         value: itemEnCarro
@@ -24,7 +23,6 @@ const Ofertas = () => {
 
     }else{
       /*entra solo si el producto no existe en el carrito */
-      console.log('ITEM NO EXISTE EN CARRO')
       dispatch({
         type: TYPES.AGREGAR_ITEM,
         value: nuevoItem
