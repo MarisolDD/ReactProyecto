@@ -1,66 +1,110 @@
-import React, { useReducer } from "react";
-import { TYPES } from "../componentes/actioncar";
+import { TYPES } from "../componentes/ActionCart";
 import "./ShoppingCar.css";
-import { cartInitialState, cartReducer } from "../componentes/cartReducer";
-import Producto from "../componentes/Producto";
 import ItemCarrito from "../componentes/ItemCarrito";
+import { useAppContext } from "../AppProvaider";
+import {useNavigate} from "react-router-dom"
+
 
 const ShoppingCar = () => {
-  const [state, dispatch] = useReducer(cartReducer, cartInitialState);
 
-  const { products, cart } = state;
+  const navigate = useNavigate()
 
-  const addToCart = (id) => {
-    dispatch({ type: TYPES.ADD_TO_CART, payload: id });
-  };
-  const deleteFromCart = (id, all = false) => {
+  const { carrito, dispatch } = useAppContext();
+
+  const handleClick = (id, all = false) => {
     if (all) {
-      dispatch({ type: TYPES.REMOVE_ALL_ITEM, payload: id });
+      dispatch({
+        type: TYPES.QUITAR_ITEM,
+        value: id,
+      });
     } else {
-      dispatch({ type: TYPES.REMOVE_ONE_PRODUCTS, payload: id });
+      dispatch({
+        type: TYPES.RESTAR_UNO,
+        value: id,
+      });
     }
   };
-  const clearCart = () => {
-    dispatch({ type: TYPES.CLEAR_CART });
+
+  const handleLimpiarCarrito = () => {
+    dispatch({
+      type: TYPES.LIMPIAR_CARRITO,
+    });
   };
 
-  return (
-    <div className="container-fluid" id = "contenedor1">
-      <div className="row">
-        <div className="row text-center mt-5">
-          <h2 className="h2 mt-5" id = "carrito">Carrito de compras</h2>
-          <h3 className="h3" >Productos</h3>
-        </div>
-        <div className="row">
-          {products.map((producto) => (
-            <div className="col-12 col-md-6 col-xl-3" id ="productos">
-              <Producto
-                key={producto.id}
-                data={producto}
-                addToCart={addToCart}
-              />
-            </div>
-          ))}
-        </div>
-      </div>
+  const handleRetorno=()=>{
+    dispatch({
+      type: TYPES.LIMPIAR_CARRITO,
+    });
+    navigate(-1)
+  }
 
+  return (
+    <div className="container-fluid" id="contenedor1">
       <div className="row my-5">
         <div className="row text-center">
           <h2 className="h2">Carrito</h2>
         </div>
-        <div className="row">
-          <button className="btn btn-dark" onClick={clearCart}>
-            Limpiar Carrito
-          </button>
+        <div className="row d-flex justify-content-around">
+          
+            <button className="btn btn-dark w-25" onClick={handleLimpiarCarrito}>
+              Limpiar Carrito
+            </button>
+          
+         
+            <button
+              type="button"
+              className="btn btn-primary w-25"
+              data-bs-toggle="modal"
+              data-bs-target="#myModal"
+            >
+              Finalizar Compra
+            </button>
+          
+
+          <div className="modal fade" id="myModal">
+            <div className="modal-dialog">
+              <div className="modal-content">
+                <div className="modal-header">
+                  <h4 className="modal-title">Finalizacion de la Compra</h4>
+                  <button
+                    type="button"
+                    className="btn-close"
+                    data-bs-dismiss="modal"
+                    onClick={handleRetorno}
+                  ></button>
+                </div>
+
+                <div className="modal-body">
+                  <p>Gracias por su participacion! </p>
+                  <p>Este es un proyecto de estudio.-</p>
+                  <p>Usted no ha realizado ninguna compra! </p>
+                  <p>Todos los Productos son Ficticios! </p>
+                  <p>
+                    No debera abonar absolutamente nada por participar de este
+                    proyecto.-
+                  </p>
+                  <p>Muchas Gracias!</p>
+                </div>
+
+                <div className="modal-footer">
+                  <button
+                    type="button"
+                    className="btn btn-danger"
+                    data-bs-dismiss="modal"
+                    
+                    onClick={handleRetorno}
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="row justify-content-center">
-          {cart.map((item, index) => (
-            <div className="col-12 col-md-6 col-xl-3">
-              <ItemCarrito
-                key={index}
-                data={item}
-                deleteFromCart={deleteFromCart}
-              />
+          {carrito.map((item, index) => (
+            <div className="col-12 col-md-6 col-xl-3" key={index}>
+              <ItemCarrito key={index} data={item} handleClick={handleClick} />
             </div>
           ))}
         </div>

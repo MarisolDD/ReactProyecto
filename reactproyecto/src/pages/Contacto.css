@@ -76,7 +76,7 @@ textarea {
 }
  
 
-button {
+.btn-contacto {
   width: 8rem;
   border-radius: 8px;
   color: rgb(0, 7, 0);
@@ -84,24 +84,21 @@ button {
   cursor: pointer;
   font-family:'Gill Sans MT';
   font-size:100%;
-  border-style: solid;
-
-  
+  /* border-style: solid; */
 }
 
-button:hover,
-button:focus {
+.btn-contacto:hover,
+.btn-contacto:focus {
   background-color:  #eb0404;
   font-size: 1.2rem;
   font-weight: 500;
   
 }
 
-.btn-retorno{
+.span-contacto{
   width: 8rem;
   color: rgb(0, 7, 0);
   cursor: pointer;
   font-family:'Gill Sans MT';
   font-size:100%;
- 
 }

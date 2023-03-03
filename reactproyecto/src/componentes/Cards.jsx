@@ -37,13 +37,15 @@ const cards = [
   },
 ];
 
-function Cards() {
+const Cards = () => {
+
   return (
     <div className="container d-flex justify-content-center align-items-center mt-5">
       <div className="row mt-4">
         {cards.map((card) => (
           <div className="col-md-3" key={card.id}>
             <Card
+              id={card.id}
               title={card.title}
               imageSource={card.image}
               url={card.url}
@@ -54,6 +56,6 @@ function Cards() {
       </div>
     </div>
   );
-}
+};
 
 export default Cards;

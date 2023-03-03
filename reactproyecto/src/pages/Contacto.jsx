@@ -28,11 +28,11 @@ const Contacto = ({CONTACTO}) => {
             <label>Message</label>
             <textarea name="user_message" id="" cols="30" rows="8"></textarea>
             <hr />
-            <button onClick={() => alert('Gracias por contactarse, el correo ha sido eviado!')}> Send ✉ </button>
+            <button className="btn-contacto" onClick={() => alert('Gracias por contactarse, el correo ha sido enviado!')}> Send ✉ </button>
             <p></p>
-            <button className="btn-retorno">
+            <button className="btn-contacto">
                 <Link to="/" style ={{ textDecoration: "none"}}>
-                 <span  className="btn-retorno">← Return</span>
+                 <span  className="span-contacto">← Return</span>
                  </Link>
             </button>
           </form>

@@ -4,12 +4,16 @@ import Cards from "../componentes/Cards";
 import Carousel from "../componentes/carousel";
 import CarouselInstagram from "../componentes/CarouselInstagram";
 import Body from "../componentes/Body";
+import Ofertas from "../componentes/Ofertas";
 
 const Inicio = () => {
   return (
     <div className="container-fluid">
       <div className="row ">
           <HeroImage />
+      </div>
+      <div className="row">
+        <Ofertas/>
       </div>
       <div className="row">
           <Cards />

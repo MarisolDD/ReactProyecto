@@ -1,10 +1,12 @@
-import React from "react";
 import LOGO from "../images/Logo.jpg";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 import { Outlet, Link } from "react-router-dom";
+import { useAppContext } from "../AppProvaider";
 
 const Navbar = () => {
+
+  const {itemsEnCarrito}=useAppContext()
+
   return (
     <div className="container-fluid w-100">
       <header>
@@ -15,13 +17,13 @@ const Navbar = () => {
         </a>
         <ul>
           <li>
-            <a href="http://localhost:3000/">DESTINOS</a>
+            <Link to="destinos">DESTINOS</Link>
           </li>
           <li>
-            <a href="http://localhost:3000/">GRUPALES</a>
+            <Link to="grupales">GRUPALES</Link>
           </li>
           <li>
-            <a href="http://localhost:3000/">AUTOS</a>
+            <Link to="autos">AUTOS</Link>
           </li>
           <li>
             <Link to="seguros">SEGUROS</Link>
@@ -29,14 +31,11 @@ const Navbar = () => {
           <li>
             <Link to="contacto">Contacto</Link>
           </li>
-          <li>
-            <Link to="shoppingCar">ShoppingCar</Link>
-          </li>
-          </ul>
+        </ul>
         <div className="cart">
           <Link to="shoppingCar">
             <box-icon name="cart"></box-icon>
-            <span className="item_total">0</span>
+            <span className="item_total">{itemsEnCarrito}</span>
           </Link>
         </div>
 

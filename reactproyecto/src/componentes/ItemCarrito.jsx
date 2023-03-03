@@ -1,6 +1,6 @@
 import React from "react";
 
-export const ItemCarrito = ({ data, deleteFromCart }) => {
+export const ItemCarrito = ({ data, handleClick }) => {
   const { id, nombre, precio, cantidad } = data;
 
   return (
@@ -13,14 +13,14 @@ export const ItemCarrito = ({ data, deleteFromCart }) => {
       </div>
 
       <div className="row m-2">
-        <button className="btn btn-primary" onClick={() => deleteFromCart(id)}>
+        <button className="btn btn-primary" onClick={() => handleClick(id)}>
           Eliminar uno
         </button>
       </div>
       <div className="row m-2">
         <button
           className="btn btn-primary"
-          onClick={() => deleteFromCart(id, true)}
+          onClick={() => handleClick(id, true)}
         >
           Eliminar todos
         </button>
