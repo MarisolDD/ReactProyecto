@@ -6,6 +6,7 @@ import image2 from "../images/travelace.jpeg";
 import image3 from "../images/universal-assistance.jpeg";
 import image4 from "../images/alMundo.jpeg";
 
+
 const cards = [
   {
     id: 1,

@@ -12,28 +12,28 @@ const cards = [
     title: "Iguazu",
     image: image1,
     url: "https://misiones.tur.ar/iguazu/",
-    text: "$40.000",
+    text: "",
   },
   {
     id: 2,
     title: "Bariloche",
     image: image2,
     url: "https://barilocheturismo.gob.ar/es/home",
-    text: "$45.000",
+    text: "",
   },
   {
     id: 3,
     title: "Jujuy",
     image: image3,
     url: "http://www.turismo.jujuy.gob.ar/",
-    text: "$48.000",
+    text: "",
   },
   {
     id: 4,
     title: "Calafate",
     image: image4,
     url: "https://www.elcalafate.tur.ar/",
-    text: "$50.000",
+    text: "",
   },
 ];
 

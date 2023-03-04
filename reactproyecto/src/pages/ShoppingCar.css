@@ -1,19 +1,9 @@
 #contenedor1 {
    
-    padding: 1%;
     background: linear-gradient(-45deg,  #ffff , #f5f2eeec, #FFFF,#f1e6c7);  
-    margin-bottom: 7%;
-}
-
-#carrito {
+    padding-top: 7%;
+    height: 80vh;
    
-    margin-bottom: 2%;
-    padding-top: 3%;
-}
 
-#productos {
-
-    margin-bottom: 5%;
-    padding-top: 3%;
 
 }
