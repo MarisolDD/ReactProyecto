@@ -8,7 +8,7 @@ function Destinos() {
   return (
  
     <div className=''>
-    <ReactPlayer url={video} controls loop mute width="100%" height="90%"/>
+    <ReactPlayer url={video} controls loop muted volume={1} width="100%" height="90%"/>
        
     <h3>Conozca más al respecto de nuestras promociones por multidestino y acumulación de millas aéreas </h3>
   </div>
