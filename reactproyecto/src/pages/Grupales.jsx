@@ -1,13 +1,23 @@
-import React from 'react'
-import imagen from "../images/pagina_en_construccion2.png"
-
+import React from "react";
+import imagen from "../images/pagina_en_construccion2.png";
 
 function Grupales() {
   return (
-    <div className='container-fluid w-50 bg-warning'>
-      <img src={imagen} alt="imagen" className='w-100' style={{marginTop:'120px'}}/>
-    </div>
-  )
+  
+      <div className="container-fluid d-flex flex-column pt-5">
+
+        <div className="row col bg-warning justify-content-center align-items-center">
+          <img
+            src={imagen}
+            alt="imagen"
+            className="w-50 pt-5"
+            style={{objectFit:'cover'}}
+          />
+        </div>
+
+      </div>
+  
+  );
 }
 
-export default Grupales
+export default Grupales;
