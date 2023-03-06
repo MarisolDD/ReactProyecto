@@ -15,15 +15,19 @@ const Inicio = () => {
       <div className="row">
         <Ofertas/>
       </div>
+      <hr className="w-100"/>
       <div className="row">
           <Cards />
       </div>
+      <hr className="w-100"/>
       <div className="row">
           <Carousel />
       </div>
+      <hr className="w-100"/>
       <div className="row">
           <CarouselInstagram />
       </div>
+      <hr className="w-100"/>
       <div className="row">
           <Body />
       </div>
