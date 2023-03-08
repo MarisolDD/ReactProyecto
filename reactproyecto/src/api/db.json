@@ -169,5 +169,35 @@
       "precio": 85000,
       "img": "vuelos.jpg"
     }
+  ],
+  "info-cards":[
+    {
+      "id": 1,
+      "title": "Iguazu",
+      "image": "iguazu.jpeg",
+      "url": "https://misiones.tur.ar/iguazu/",
+      "text": ""
+    },
+    {
+      "id": 2,
+      "title": "Bariloche",
+      "image": "bariloche.jpeg",
+      "url": "https://barilocheturismo.gob.ar/es/home",
+      "text": ""
+    },
+    {
+      "id": 3,
+      "title": "Jujuy",
+      "image": "jujuy.jpeg",
+      "url": "http://www.turismo.jujuy.gob.ar/",
+      "text": ""
+    },
+    {
+      "id": 4,
+      "title": "Calafate",
+      "image": "calafate.jpeg",
+      "url": "https://www.elcalafate.tur.ar/",
+      "text": ""
+    }
   ]
 }
