@@ -1,5 +1,5 @@
 import React from "react";
-import imagen from "../images/pagina_en_construccion2.png";
+import imagen from "../images/Background.jpg";
 
 function Grupales() {
   return (
