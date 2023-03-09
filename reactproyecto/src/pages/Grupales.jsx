@@ -1,23 +1,21 @@
 import React from "react";
-import imagen from "../images/Background.jpg";
+import { Player } from '@lottiefiles/react-lottie-player';
 
-function Grupales() {
+const App = () => {
   return (
-  
-      <div className="container-fluid d-flex flex-column pt-5">
+    <div className='container'>
+      
 
-        <div className="row col bg-warning justify-content-center align-items-center">
-          <img
-            src={imagen}
-            alt="imagen"
-            className="w-50 pt-5"
-            style={{objectFit:'cover'}}
-          />
-        </div>
+      <Player
+        src='https://lottie.host/3cf9cd07-cecf-49f3-806f-a484ab139ac7/ShdTM6DO4T.json'
+        className="player"
+        loop
+         autoplay
+         style={{ height: '700px', width: '700px' }}
+      />
 
-      </div>
-  
-  );
+    </div>
+  )
 }
 
-export default Grupales;
+export default App

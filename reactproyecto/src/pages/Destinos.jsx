@@ -6,7 +6,7 @@ import video from "./assets/videos/VOLANDO sobre ARGENTINA en un minuto _ 4K _.m
 
 function Destinos() {
   return (
-    <div className='container-fluid d-flex flex-column align-items-around justify-content-around  bg-dark text-white text-center' style={{height:'100vh', width:'100vw'}}>
+    <div className='container-fluid d-flex flex-column align-items-around justify-content-around  text-white text-center' style={{height:'100vh', width:'100vw'}}>
     <div className='row' style={{height:'13%', width:'100%'}}> 
     </div>
     <div className='row text-warning'>
