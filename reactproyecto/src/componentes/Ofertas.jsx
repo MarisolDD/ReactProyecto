@@ -1,35 +1,30 @@
 import Producto from "./Producto";
 import { useAppContext } from "../AppProvaider";
-import {TYPES} from "../componentes/ActionCart"
+import { TYPES } from "../componentes/ActionCart";
 
 const Ofertas = () => {
+  const { producto, carrito, dispatch } = useAppContext();
 
-  const{producto, carrito, dispatch}=useAppContext()
+  const handleClick = (id) => {
+    let nuevoItem = producto.find((e) => e.id === id);
+    nuevoItem.cantidad = 1;
 
+    let itemEnCarro = carrito.find((e) => e.id === id);
 
-  const handleClick=(id)=>{
-
-    let nuevoItem = producto.find((e)=>e.id===id)
-    nuevoItem.cantidad=1
-    
-    let itemEnCarro = carrito.find((e)=>e.id===id)
-
-    if(itemEnCarro){
+    if (itemEnCarro) {
       /*entra solo si el producto si existe en el carrito */
       dispatch({
         type: TYPES.SUMAR_UNO,
-        value: itemEnCarro
-      })
-
-    }else{
+        value: itemEnCarro,
+      });
+    } else {
       /*entra solo si el producto no existe en el carrito */
       dispatch({
         type: TYPES.AGREGAR_ITEM,
-        value: nuevoItem
-      })
+        value: nuevoItem,
+      });
     }
-  }
-
+  };
 
   return (
     <div className="container-fluid" id="contenedor1">
@@ -42,7 +37,7 @@ const Ofertas = () => {
         <div className="row">
           {producto.map((producto) => (
             <div
-              className="col-12 col-md-6 col-xl-3"
+              className="col-12 col-md-6 col-lg-3"
               id="productos"
               key={producto.id}
             >

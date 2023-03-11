@@ -31,10 +31,13 @@ const Cards = () => {
 
 
   return (
-    <div className="container d-flex justify-content-center align-items-center mt-5">
+    <div className="container d-flex justify-content-center align-items-center mt-5 d-flex flex-column">
+      <div className="container-fluid text-center">
+        <h3>Informacion Oficial</h3>
+      </div>
       <div className="row mt-4">
         {arrayInfoCards.map((card) => (
-          <div className="col-md-3" key={card.id}>
+          <div className="col-md-6 col-lg-3" key={card.id}>
             <Card
               id={card.id}
               title={card.title}

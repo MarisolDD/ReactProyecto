@@ -7,8 +7,8 @@ const CarouselInstagram = () => {
 
   /**useEffect para llamar api instagram */
   useEffect(() => {
-    let accessToken = process.env.REACT_APP_TOKEN_INSTAGRAM
-  
+    let accessToken = process.env.REACT_APP_TOKEN_INSTAGRAM;
+
     let url =
       "https://graph.instagram.com/me/media?fields=id,caption,media_url&access_token=";
     const cargarPerfilInstagram = async () => {
@@ -29,8 +29,8 @@ const CarouselInstagram = () => {
 
   return (
     <div className="container-fluid d-flex flex-column align-items-center my-5">
-      <div className="container my-3">
-        <h1 className="h1">
+      <div className="container-fluid">
+        <h1 className="h1 text-center">
           <a
             href="https://www.instagram.com/solturismo5555/"
             target={"_blank"}
@@ -38,14 +38,13 @@ const CarouselInstagram = () => {
             style={{ textDecoration: "none" }}
             className="SolTurismo"
           >
-            {" "}
-            Sol Turismo - Instagram{" "}
+            Sol Turismo - Instagram
           </a>
         </h1>
       </div>
       <div
         id="carousel-instagram"
-        className="carousel slide miCarouselInstagram"
+        className="carousel slide miCarouselInstagram my-1"
         data-bs-ride="carousel"
       >
         {/* carousel */}
