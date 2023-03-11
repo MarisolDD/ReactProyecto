@@ -79,14 +79,13 @@
   color: red;
   font-size: xx-large;
   text-align: center;
-  padding-left: 35%;
 }
 
 /* estilos Body.jsx-------------------------------------------------------------------------------- */
 
 .elegir5soles {
   text-align: justify;
-  text-indent: 2%;
+  text-indent: 1%;
 }
 
 .col {
@@ -97,7 +96,7 @@
   padding-top: 2%;
 }
 .contenedor-icono svg {
-  width: 400px;
+  width: 100%;
   height: 30px;
 }
 
@@ -108,7 +107,7 @@
   background: #ffffff;
   color: black;
   left: 0;
-  width: 100%;
+  width: 100vw;
   padding-top: 5%;
 
   

@@ -29,7 +29,7 @@ const Carousel = () => {
 
     <div className="container-fluid w-100 miCarousel mt-2">
       <div className="row">
-        <h1 className="h1 text-center">Los destinos mas elegidos por nuestros clientes</h1>
+        <h3 className="h3 text-center">Desliza las imagenes y ve lo mas elegido por nuestros clientes</h3>
         </div>
       <motion.div drag="x" dragConstraints={{ right: 900, left: -10200 }} className="d-flex justify-content-between align-items-center flex-nowrap">
       {arreglo.map((e, index) => {

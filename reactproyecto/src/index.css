@@ -157,11 +157,11 @@ font-family: monospace;
 font-size:small;
 }
 .Body .row{
-  text-align:left;
+  text-align:justify;
 }
 .Body .titulo1{
   font-size: 150%
 }
-body {
+/* body {
   overflow-x: hidden;
-}
+} */
