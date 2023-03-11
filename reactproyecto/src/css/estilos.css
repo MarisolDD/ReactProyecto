@@ -18,6 +18,10 @@
   color: #dc3d0d;
 }
 
+.miCarousel{
+  overflow: hidden;
+}
+
 
 /*estilos HeroImage.jsx----------------------------------------------------------------------------*/
 .hero-image {
@@ -103,13 +107,11 @@
 
 /*estilos Footer.jsx-------------------------------------------------------------------------------*/
 
-.footer-container {
+.footer {
   background: #ffffff;
   color: black;
   left: 0;
   width: 100vw;
-  padding-top: 5%;
-
-  
+  padding-top: 5%; 
 }
 

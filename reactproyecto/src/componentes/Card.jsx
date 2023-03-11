@@ -7,7 +7,7 @@ const Card = ({ id, title, imageSource, url, text}) => {
 
   return (
     <div className="card-body">
-      <div className="card text-center bg- ">
+      <div className="card text-center">
         <img className="img-rounded m-2" src={imageSource} alt="imagen"/>
 
         <h4 className=" card-title my-3">{title}</h4>
