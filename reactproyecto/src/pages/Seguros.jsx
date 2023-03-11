@@ -7,8 +7,8 @@ import imagen from "../images/seguros2.jpg"
 const Seguros = () => {
   return (
     <>
-    <div className='container-fluid w-40'> 
-     <img src={imagen} alt="imagen" className='w-100' id ="imseguros"/>
+    <div className='container-fluid w-100 pt-5'> 
+     <img src={imagen} alt="imagen" className='w-100 mt-5 pt-2' id ="imseguros"/>
      </div>
       <CardsSeguros />
       {/* <Footer /> */}

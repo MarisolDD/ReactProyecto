@@ -1,21 +1,19 @@
 import React from "react";
-import { Player } from '@lottiefiles/react-lottie-player';
+import Lottie from "react-lottie-player";
+import LottieJson from "../pages/assets/lottieJson.json";
 
 const App = () => {
   return (
-    <div className='container'>
-      
-
-      <Player
-        src='https://lottie.host/3cf9cd07-cecf-49f3-806f-a484ab139ac7/ShdTM6DO4T.json'
-        className="player"
+    <div className="container-fluid">
+      <Lottie
+        className="player container"
+        animationData={LottieJson}
         loop
-         autoplay
-         style={{ height: '700px', width: '700px' }}
+        play
+        style={{ height: "700px", width: "700px" }}
       />
-
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

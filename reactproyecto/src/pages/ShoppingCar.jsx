@@ -68,7 +68,7 @@ const ShoppingCar = () => {
           <h2 className="h2">Carrito</h2>
         </div>
         <div className="row justify-content-around m-2">
-          <button className="btn btn-success col-1" onClick={handleVolver}>
+          <button className="btn btn-success col-2" onClick={handleVolver}>
             volver
           </button>
 
@@ -76,9 +76,9 @@ const ShoppingCar = () => {
             Limpiar Carrito
           </button>
 
-          <h3 className="h3 w-25 text-center ">
+          <h4 className="h4 w-25 text-center ">
             Total Compra $ {totalCompra}.00
-          </h3>
+          </h4>
 
           <button
             type="button"
@@ -171,7 +171,7 @@ const ShoppingCar = () => {
         </div>
         <div className="row justify-content-center">
           {carrito.map((item, index) => (
-            <div className="col-12 col-md-6 col-xl-3" key={index}>
+            <div className="col-6 col-lg-3" key={index}>
               <ItemCarrito key={index} data={item} handleClick={handleClick} />
             </div>
           ))}

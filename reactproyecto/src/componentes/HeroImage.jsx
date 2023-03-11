@@ -3,11 +3,11 @@ import "../css/estilos.css";
 
 function HeroImage() {
   return (
-    <div className="hero-image border">
-      <div className="hero-text">
-        <h1>
+    <div className="hero-image justify-content-center align-items-center">
+      <div className="hero-text w-75 h-50 align-items-end">
+        <h2 className="h2 my-5">
           Viví la <b>aventura</b> de una <b>vida</b>
-        </h1>
+        </h2>
         <p>
           Con nuestra amplia gama de opciones y un equipo de{" "}
           <b>expertos en viajes</b>, estamos seguros de que encontrarás la
