@@ -11,7 +11,7 @@ const Carousel = () => {
   useEffect(() => {
     const llenarArreglo = async () => {
       try {
-        const res = await axios.get("http://localhost:5555/imagen");
+        const res = await axios.get("https://json-server-vercel-peach.vercel.app/imagen");
 
         if (res.status === 200) {
           console.log(res.data);
@@ -31,7 +31,7 @@ const Carousel = () => {
       <div className="row">
         <h3 className="h3 text-center">Desliza las imagenes y ve lo mas elegido por nuestros clientes</h3>
         </div>
-      <motion.div drag="x" dragConstraints={{ right: 900, left: -10200 }} className="d-flex justify-content-evenly align-items-center flex-nowrap">
+      <motion.div drag="x" dragConstraints={{ right: 5350, left: -5350 }} className="d-flex justify-content-evenly align-items-center flex-nowrap">
       {arreglo.map((e, index) => {
         return (
             <motion.div className="item mx-1 rounded-5" key={index}>
