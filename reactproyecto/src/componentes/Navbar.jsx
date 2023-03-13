@@ -17,7 +17,7 @@ const NavBar = () => {
       <nav className="navbar navbar-expand-lg w-100 mx-1">
         <div className="container col-lg-10 col-8">
           <div className="container col-lg-3">
-            <a className="nav-bar brand" href="/">
+            <a className="nav-bar brand" href="/" onClick={handleClick}>
               <div className="logo text-center">
                 <img src={LOGO} alt="logo" width="150" onClick={handleClick}/>
               </div>
@@ -59,7 +59,7 @@ const NavBar = () => {
         <div className="cart container col-2 col-lg-1 justify-content-center">
           <Link to="shoppingCar">
             <box-icon name="cart"></box-icon>
-            <span className="item_total me-3">{itemsEnCarrito}</span>
+            <span className="item_total me-4">{itemsEnCarrito}</span>
           </Link>
         </div>
         <div className="col-1 col-lg-1 mx-2">
