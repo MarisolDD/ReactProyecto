@@ -6,17 +6,29 @@ import { Link } from "react-router-dom";
 
 const Contacto = ({ CONTACTO }) => {
   const sendEmail = (event) => {
-    event.preventDefault();
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    
+    (function(){
+      emailjs.init("RPrGvdz__p-F5YNCr");
+   })();
 
     emailjs
       .sendForm(
-        "service_d5n5bte",
-        "template_x2cqih8",
+        "service_2qi3j2p",
+       
         event.target,
         "Zjo6mNYvNam9PYTZC"
+  
       )
       .then((response) => console.log(response))
       .catch((error) => console.log(error));
+     
+   (function(){
+      emailjs.init("RPrGvdz__p-F5YNCr");
+   })();
+  
   };
 
   return (
